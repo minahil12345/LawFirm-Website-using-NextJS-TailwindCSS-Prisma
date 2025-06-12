@@ -4,10 +4,39 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 export default async function ClientDashboard({ params }: { params: { clientId: string } }) {
+  type Document = {
+    id: string;
+    url: string;
+    name: string;
+  };
+  
+  type Message = {
+    id: string;
+    date: string;
+    content: string;
+  };
+  
+  type Case = {
+    id: string;
+    status: string;
+    attorney: string;
+    nextHearing: string;
+    documents: Document[];
+    messages: Message[];
+  };
+  
+  type Client = {
+    id: string;
+    username: string;
+    case: Case[];
+  };
+
+  
   const client = await prisma.client.findUnique({
     where: { id: params.clientId },
     include: { case: { include: { documents: true, messages: true } } },
-  });
+  }) as Client | null;
+  
 
   if (!client) return <p>Client not found.</p>;
 
@@ -43,3 +72,8 @@ export default async function ClientDashboard({ params }: { params: { clientId: 
     </div>
   );
 }
+// client.case.map(c => (
+//   <div key={c.id}>
+//     {/* same inner structure */}
+//   </div>
+// ))

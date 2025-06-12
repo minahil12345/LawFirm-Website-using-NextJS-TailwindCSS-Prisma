@@ -1,5 +1,5 @@
 // src/components/Partners.tsx
-
+'use client';
 export default function Partners() {
   const partners = [
     {

@@ -43,7 +43,7 @@ export default function News() {
 
   return (
     <section id="news" aria-labelledby="news-title" className="max-w-[1080px] mx-auto">
-      <h2 id="news-title" className="text-lg font-bold border-l-4 border-black pl-2 mb-4">Today's News</h2>
+      <h2 id="news-title" className="text-lg font-bold border-l-4 border-black pl-2 mb-4">Today&apos;s News</h2>
 
       <div className="flex flex-col gap-[14px]" aria-live="polite" aria-relevant="additions">
         {visibleNews.map((item, i) => (

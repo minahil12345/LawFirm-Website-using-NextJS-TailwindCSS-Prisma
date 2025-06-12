@@ -39,7 +39,7 @@ export default function ComplianceSeminar() {
 
           <div className="space-y-4 text-base leading-[1.8]">
             <p><strong>Stonebridge Law Firm</strong> invites professionals, business owners, and legal practitioners to attend a <strong>free public seminar</strong> focused on the major regulatory changes expected in 2024.</p>
-            <p>The seminar, titled <em>"Navigating Compliance in 2024"</em>, will offer insights into new legal standards affecting corporate governance, environmental regulations, labor law, and data privacy compliance.</p>
+            <p>The seminar, titled <em>Navigating Compliance in 2024</em>, will offer insights into new legal standards affecting corporate governance, environmental regulations, labor law, and data privacy compliance.</p>
             <p>“With evolving regulations and increased scrutiny on ethical practices, companies need clear guidance,” said <strong>Legal Analyst Priya Menon</strong>. “This event aims to prepare organizations for the changes ahead.”</p>
             <p>The event will take place on <strong>June 18, 2024</strong> at the Grand Convention Center, featuring keynote speakers including senior legal officers, compliance experts, and government advisors.</p>
             <p>Attendees can expect interactive Q&A sessions, handouts summarizing new policies, and networking opportunities. Participation is free, but <strong>pre‑registration is required</strong> due to limited seating.</p>

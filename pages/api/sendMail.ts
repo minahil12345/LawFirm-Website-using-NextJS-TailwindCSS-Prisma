@@ -10,7 +10,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
-    secure: true,
+    secure: false,
     service: "gmail",
     auth: {
       user: process.env.MAIL_USER,

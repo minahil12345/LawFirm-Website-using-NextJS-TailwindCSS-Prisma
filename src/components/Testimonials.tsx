@@ -3,7 +3,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-function TypingText({ text, speed = 50 }) {
+function TypingText({ text, speed = 50 }: { text: string; speed?: number }) {
   const [displayed, setDisplayed] = useState('');
   const [index, setIndex] = useState(0);
 
@@ -16,7 +16,6 @@ function TypingText({ text, speed = 50 }) {
         setIndex((prev) => prev + 1);
       }, speed);
     } else {
-      // Wait 2 seconds and restart
       const timeout = setTimeout(() => {
         setDisplayed('');
         setIndex(0);
@@ -29,6 +28,7 @@ function TypingText({ text, speed = 50 }) {
 
   return <span>{displayed}</span>;
 }
+
 
 const testimonials = [
   "After my car accident last year, I was left dealing with medical bills, insurance claims, and severe emotional stress. I had no idea how to move forward. This firm not only took my personal injury case seriously, but they also treated me with genuine care. They walked me through every document, every call, and fought hard to get the compensation I deserved. It honestly felt like they cared more about my recovery than the payout. I'm incredibly grateful for their help and compassion during that traumatic time.",

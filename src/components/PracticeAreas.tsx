@@ -1,5 +1,5 @@
 // src/components/PracticeAreas.tsx
-
+'use client';
 export default function PracticeAreas() {
   const areas = [
     {
