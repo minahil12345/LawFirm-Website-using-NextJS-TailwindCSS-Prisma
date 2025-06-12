@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .dashboard {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h2, h3 {
+      color: #000;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+	.back-link {
+      margin-top: 40px;
+    }
+
+    .back-link a {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .back-link a:hover {
+      background-color: #444;
+    }
+	
+    .case-info p,
+    .contact-info p {
+      margin: 6px 0;
+    }
+
+    .timeline {
+      border-left: 3px solid #000;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .timeline-step {
+      position: relative;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .timeline-step::before {
+      content: '';
+      position: absolute;
+      left: -14px;
+      top: 6px;
+      height: 12px;
+      width: 12px;
+      background: #000;
+      border-radius: 50%;
+    }
+
+    .documents, .messages {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      background: #f9f9f9;
+    }
+
+    .documents ul, .messages ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .documents li, .messages li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .documents li:last-child,
+    .messages li:last-child {
+      border-bottom: none;
+    }
+
+    .action-btn {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .action-btn:hover {
+      background-color: #005fa3;
+    }
+
+    @media (max-width: 600px) {
+      .dashboard {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+	<div class="back-link">
+        <a href="law_office.html#office">← Back to Main Page</a>
+      </div>
+    <h2>Welcome to Your Case Dashboard</h2>
+
+    <div class="section case-info">
+      <h3>Case Overview</h3>
+      <p><strong>Case ID:</strong> #A-2025-194</p>
+      <p><strong>Status:</strong> In Progress</p>
+      <p><strong>Responsible Attorney:</strong> Sarah Martinez</p>
+      <p><strong>Next Hearing:</strong> July 15, 2025 at 10:30 AM</p>
+      <p><strong>Location:</strong> District Court #2, Capital City</p>
+    </div>
+
+    <div class="section">
+      <h3>Case Tracking Progress</h3>
+      <div class="timeline">
+        <div class="timeline-step"><strong>Jan 12, 2025:</strong> Case Filed</div>
+        <div class="timeline-step"><strong>Feb 03, 2025:</strong> First Hearing Completed</div>
+        <div class="timeline-step"><strong>Mar 20, 2025:</strong> Evidence Submitted</div>
+        <div class="timeline-step"><strong>Apr 18, 2025:</strong> Witness Statements Reviewed</div>
+        <div class="timeline-step"><strong>Next:</strong> Court Hearing – July 15, 2025</div>
+      </div>
+    </div>
+
+   <div class="section documents">
+	  <h3>Case Documents</h3>
+	  <ul>
+		<li><a href="./documents/complaint.pdf" download="Complaint_Document.pdf">Complaint Document</a></li>
+		<li><a href="./documents/evidence-report.pdf" download="Evidence_Report.pdf">Evidence Report</a></li>
+		<li><a href="./documents/court-summons.pdf" download="Court_Summons.pdf">Court Summons</a></li>
+		<li><a href="./documents/witness-statements.pdf" download="Witness_Statements.pdf">Witness Statements</a></li>
+	  </ul>
+	</div>
+
+    <div class="section messages">
+      <h3>Messages from Your Attorney</h3>
+      <ul>
+        <li><strong>May 20:</strong> Please review the attached witness documents before our next meeting.</li>
+        <li><strong>Apr 10:</strong> We’re expecting the judge’s feedback within a week.</li>
+      </ul>
+    </div>
+
+    <div class="section contact-info">
+      <h3>Contact Your Legal Team</h3>
+      <p><strong>Phone:</strong><a href="tel:+12175551234">(217) 555-1234 (Ext: 101) </a></p>
+      <p><strong>Email:</strong> <a href="mailto:contact.sarahmartinez@stonebridgelegallawfirm.com">contact.sarahmartinez@stonebridgelegallawfirm.com</a></p>
+      <p><strong>Office Hours:</strong> Mon - Fri, 9:00 AM - 5:30 PM</p>
+    </div>
+
+    <button class="action-btn">Request a Meeting</button>
+  </div>
+</body>
+</html>
