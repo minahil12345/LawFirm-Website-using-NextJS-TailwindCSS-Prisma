@@ -1,4 +1,4 @@
-# ⚖️ Law Firm Website – Client & Partner Portal
+# ⚖️ Law Firm Website – Stonebridge Legal Law Firm
 
 ![Project Architecture](./path-to-your-image/1905dc89-e847-4488-a1bc-55d0e8a16e2d.png)
 
