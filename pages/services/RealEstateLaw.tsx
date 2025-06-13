@@ -1,6 +1,7 @@
 import '../../src/app/globals.css';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function RealEstateLaw() {
@@ -29,7 +30,7 @@ export default function RealEstateLaw() {
       </div>
 
       <div className="my-5">
-        Whether you're buying, selling, leasing, or developing property, legal expertise is critical. We provide reliable, detailed legal support across all types of real estate transactions and property-related disputes to ensure your investment is sound and protected.
+        Whether you&apos;re buying, selling, leasing, or developing property, legal expertise is critical. We provide reliable, detailed legal support across all types of real estate transactions and property-related disputes to ensure your investment is sound and protected.
       </div>
 
       <div className="flex flex-wrap gap-5">
@@ -97,9 +98,9 @@ export default function RealEstateLaw() {
         <h2 className="text-xl font-semibold">Make Confident Real Estate Decisions</h2>
         <p>Get trusted legal support for every property move.</p>
         <p>
-          <a href="/#contact" className="text-blue-600 font-semibold underline">
+          <Link href="/#contact" className="text-blue-600 font-semibold underline">
             Talk to a Real Estate Lawyer →
-          </a>
+          </Link>
         </p>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import '../../src/app/globals.css';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function PlanningWills() {
@@ -27,7 +28,7 @@ export default function PlanningWills() {
       </div>
 
       <div className="mt-5 mb-5">
-        Planning your estate is about more than just writing a will—it's about securing your family's future. Our attorneys guide you through every step of estate planning to ensure your wishes are legally protected and your loved ones are cared for, no matter what.
+        Planning your estate is about more than just writing a will—it&apos;s about securing your family&apos;s future. Our attorneys guide you through every step of estate planning to ensure your wishes are legally protected and your loved ones are cared for, no matter what.
       </div>
 
       <div className="flex flex-wrap gap-5 mt-0">
@@ -95,7 +96,7 @@ export default function PlanningWills() {
         <h2 className="mb-2">Secure Your Legacy Today</h2>
         <p>Our estate planning lawyers are here to guide you with care and clarity.</p>
         <p>
-          <a href="/#contact" className="text-blue-600 font-semibold underline">Book a Consultation →</a>
+          <Link href="/#contact" className="text-blue-600 font-semibold underline">Book a Consultation →</Link>
         </p>
       </div>
     </div>

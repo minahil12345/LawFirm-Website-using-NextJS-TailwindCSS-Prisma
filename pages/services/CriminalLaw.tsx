@@ -1,6 +1,7 @@
 import '../../src/app/globals.css';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function CriminalLaw() {
@@ -31,7 +32,7 @@ export default function CriminalLaw() {
 
       {/* Description */}
       <div className="my-2">
-        When your freedom, reputation, and future are at stake, you need more than just a lawyer — you need a fierce advocate. Our <strong>criminal defense team</strong> has successfully defended hundreds of clients in serious felony cases, white-collar investigations, and high-stakes trials. We understand the pressure you're facing, and we're here to give you the aggressive, skilled representation you deserve — in and out of the courtroom.
+        When your freedom, reputation, and future are at stake, you need more than just a lawyer — you need a fierce advocate. Our <strong>criminal defense team</strong> has successfully defended hundreds of clients in serious felony cases, white-collar investigations, and high-stakes trials. We understand the pressure you&apos;re facing, and we&apos;re here to give you the aggressive, skilled representation you deserve — in and out of the courtroom.
       </div>
 
       {/* Services and Why Us */}
@@ -76,7 +77,7 @@ export default function CriminalLaw() {
         <div className="flex-1">
           <h2 className="text-[20px] font-semibold mt-0">Case Study 1: Not Guilty Verdict in High-Profile Homicide Trial</h2>
           <p className="mt-2">
-            Our client was charged with second-degree murder in a nationally publicized case. The prosecution had eyewitnesses and forensic evidence. After a detailed independent investigation and aggressive cross-examinations, our team exposed critical flaws in the timeline and reliability of the state's witnesses. The jury returned a <strong>Not Guilty</strong> verdict on all counts. Our client walked free, and their life was restored.
+            Our client was charged with second-degree murder in a nationally publicized case. The prosecution had eyewitnesses and forensic evidence. After a detailed independent investigation and aggressive cross-examinations, our team exposed critical flaws in the timeline and reliability of the state&apos;s witnesses. The jury returned a <strong>Not Guilty</strong> verdict on all counts. Our client walked free, and their life was restored.
           </p>
         </div>
       </div>
@@ -93,7 +94,7 @@ export default function CriminalLaw() {
           <h2 className="text-[20px] font-semibold mt-0">Case Study 2: Acquittal in Major Cybercrime Prosecution</h2>
           <p className="mt-2">
             Our client, a university IT specialist, was charged with multiple federal offenses related to unauthorized access, identity theft, and distribution of sensitive data — allegedly compromising over 10,000 personal records. The FBI seized all digital equipment and the media called it “one of the most offensive breaches in years.”<br /><br />
-            We conducted a full digital forensic review and uncovered manipulation of server logs and improper chain of custody in evidence handling. Through expert testimony and meticulous cross-examination, we dismantled the prosecution's technical arguments. After a 10-day trial, our client was fully <strong>acquitted on all charges</strong> and returned to professional life with their reputation intact.
+            We conducted a full digital forensic review and uncovered manipulation of server logs and improper chain of custody in evidence handling. Through expert testimony and meticulous cross-examination, we dismantled the prosecution&apos;s technical arguments. After a 10-day trial, our client was fully <strong>acquitted on all charges</strong> and returned to professional life with their reputation intact.
           </p>
         </div>
       </div>
@@ -119,9 +120,9 @@ export default function CriminalLaw() {
         <h2 className="text-black font-bold">Accused of a Crime? Time is Critical.</h2>
         <p className="text-black">Our seasoned defense attorneys are ready to protect your rights and fight for your freedom.</p>
         <p>
-          <a href="/#contact" className="text-blue-600 font-semibold underline">
+          <Link href="/#contact" className="text-blue-600 font-semibold underline">
             Request a Confidential Consultation →
-          </a>
+          </Link>
         </p>
       </div>
     </main>

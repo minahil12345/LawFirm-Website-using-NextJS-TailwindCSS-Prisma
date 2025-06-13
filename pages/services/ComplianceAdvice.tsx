@@ -2,6 +2,7 @@
 import '../../src/app/globals.css';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function ComplianceAdvice() {
@@ -77,7 +78,7 @@ export default function ComplianceAdvice() {
           <h3 className="text-lg font-bold">Case: Financial Services Compliance Overhaul</h3>
           <p className="mt-2">
             A fintech client operating in multiple jurisdictions needed urgent compliance restructuring. Our legal
-            consultants led a three-month engagement aligning the client's systems with AML/KYC, GDPR, and PCI-DSS,
+            consultants led a three-month engagement aligning the client&apos;s systems with AML/KYC, GDPR, and PCI-DSS,
             enabling them to regain investor confidence and regulatory approval.
           </p>
         </div>
@@ -87,9 +88,9 @@ export default function ComplianceAdvice() {
         <h2 className="text-xl font-semibold mb-2">Stay Compliant. Stay Confident.</h2>
         <p>Let us help you navigate legal complexity and build trust with regulators.</p>
         <p className="mt-2">
-          <a href="/#contact" className="text-blue-600 font-semibold underline">
+          <Link href="/#contact" className="text-blue-600 font-semibold underline">
             Book a Compliance Consultation →
-          </a>
+          </Link>
         </p>
       </div>
     </main>

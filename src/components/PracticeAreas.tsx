@@ -1,5 +1,8 @@
 // src/components/PracticeAreas.tsx
 'use client';
+import Image from 'next/image';
+import React from 'react';
+
 export default function PracticeAreas() {
   const areas = [
     {
@@ -48,8 +51,10 @@ export default function PracticeAreas() {
             ))}
           </div>
           <div className="w-full lg:w-[40%]">
-            <img
+            <Image
               src="/images/Team_Specialization.jpg"
+              width={600}
+              height={320}
               alt="Specialization Visual"
               className="w-full h-[320px] object-cover rounded-[10px] shadow-[0_4px_20px_rgba(0,0,0,0.1)] grayscale-[70%]"
             />

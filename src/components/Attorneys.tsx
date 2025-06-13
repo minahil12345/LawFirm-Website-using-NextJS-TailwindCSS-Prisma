@@ -1,4 +1,7 @@
 'use client';
+import Image from 'next/image';
+import React from 'react';
+
 const attorneys = [
   { name: "John Doe", title: "Senior Associate - Corporate Law", desc: "Over 20 years guiding businesses with legal excellence.", image: "https://randomuser.me/api/portraits/men/45.jpg" },
   { name: "Mary Smith", title: "Associate - Family Law", desc: "Committed to compassionate support in family law cases.", image: "https://randomuser.me/api/portraits/women/47.jpg" },
@@ -25,9 +28,11 @@ export default function Attorneys() {
               className="flex-none w-[260px] bg-white rounded-[12px] px-5 py-4 shadow-[0_3px_10px_rgba(0,0,0,0.1)] text-center flex items-center gap-[12px] border border-black"
               aria-label={`Attorney ${a.name}`}
             >
-              <img
+              <Image
                 src={a.image}
                 alt={a.name}
+                width={64}
+                height={64}
                 className="w-[64px] h-[64px] rounded-full object-cover grayscale border-2 border-black"
               />
               <div className="flex flex-col text-left text-[#222] text-[0.9rem] font-medium">

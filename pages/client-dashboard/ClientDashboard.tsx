@@ -103,11 +103,11 @@ export default function ClientDashboard() {
           </p>
         </div>
 
-        <a href="/#contact">
+        <Link href="/#contact">
             <button className="mt-5 py-3 px-5 bg-black text-white font-bold rounded-md hover:bg-[#005fa3] transition-colors duration-300">
                 Request a Meeting
             </button>
-        </a>
+        </Link>
       </div>
     </div>
   );

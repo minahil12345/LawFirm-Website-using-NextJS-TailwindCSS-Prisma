@@ -1,5 +1,8 @@
 // src/components/Partners.tsx
 'use client';
+import Image from 'next/image';
+import React from 'react';
+
 export default function Partners() {
   const partners = [
     {
@@ -54,9 +57,11 @@ export default function Partners() {
             className="bg-white border border-black rounded-2xl p-5 shadow-[0_3px_10px_rgba(0,0,0,0.1)] flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:bg-black hover:text-white"
             aria-label={`Partner: ${partner.name}`}
           >
-            <img
+            <Image
               src={partner.image}
               alt={partner.name}
+              width={100}
+              height={100}
               className="w-[100px] h-[100px] rounded-full object-cover mb-4 border-2 border-black grayscale"
             />
             <h3 className="text-lg font-semibold">{partner.name}</h3>

@@ -14,7 +14,7 @@ export default function HomePage() {
     <main className="max-w-screen-xl mx-auto px-4">
       <Hero />
       <section id="services" className="py-4">
-        <Services />
+      <Services />
       </section>
       <section id="practice-areas" className="py-4">
         <PracticeAreas />

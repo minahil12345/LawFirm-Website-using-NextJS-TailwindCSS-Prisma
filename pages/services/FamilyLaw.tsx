@@ -1,6 +1,7 @@
 import '../../src/app/globals.css';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function FamilyLaw() {
@@ -108,9 +109,9 @@ export default function FamilyLaw() {
       <div className="p-5 text-center bg-transparent rounded-lg">
         <h2 className="text-xl font-bold mb-2">Need Help Navigating a Family Matter?</h2>
         <p>We’re here to guide you through legal difficulties with care and confidence.</p>
-        <a href="/#contact" className="text-blue-600 font-semibold underline">
+        <Link href="/#contact" className="text-blue-600 font-semibold underline">
           Book Your Confidential Consultation →
-        </a>
+        </Link>
       </div>
     </div>
   );

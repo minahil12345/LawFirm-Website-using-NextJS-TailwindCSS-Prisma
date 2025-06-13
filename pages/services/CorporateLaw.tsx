@@ -1,6 +1,7 @@
 import '../../src/app/globals.css';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function CorporateLaw () {
@@ -30,7 +31,7 @@ export default function CorporateLaw () {
 
       <div className="mt-5">
         As one of the leading <strong>corporate legal advisors</strong>, we specialize in providing end-to-end legal
-        solutions tailored to the evolving needs of modern businesses. Whether you're a startup structuring your first
+        solutions tailored to the evolving needs of modern businesses. Whether you&apos;re a startup structuring your first
         investment or a multinational planning a cross-border merger, our team of seasoned business lawyers delivers
         practical and proactive counsel. We simplify complexity and protect your interests at every stage of business
         growth.
@@ -110,9 +111,9 @@ export default function CorporateLaw () {
         <h2 className="text-xl font-bold mb-1">Ready to Protect and Grow Your Business?</h2>
         <p className="mb-2">Let our experienced corporate attorneys guide your next big move.</p>
         <p>
-          <a href="/#contact" className="text-blue-600 font-semibold underline">
+          <Link href="/#contact" className="text-blue-600 font-semibold underline">
             Schedule a Free Consultation →
-          </a>
+          </Link>
         </p>
       </div>
     </div>

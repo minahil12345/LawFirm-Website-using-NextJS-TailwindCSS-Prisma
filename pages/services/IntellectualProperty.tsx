@@ -1,6 +1,7 @@
 import '../../src/app/globals.css';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function IntellectualProperty() {
@@ -29,7 +30,7 @@ export default function IntellectualProperty() {
       </div>
 
       <div className="mt-4">
-        In today’s innovation-driven world, your ideas are your greatest assets. Whether you're an inventor, artist,
+        In today’s innovation-driven world, your ideas are your greatest assets. Whether you&apos;re an inventor, artist,
         startup, or established company, we provide <strong>comprehensive intellectual property law services</strong>
         to secure your creations, enforce your rights, and litigate aggressively when infringement occurs. Our team
         combines technical acumen with legal mastery to deliver results that protect your brand and future.
@@ -55,7 +56,7 @@ export default function IntellectualProperty() {
           <p>
             ✅ <strong>Decades of combined IP experience</strong> with tech, media & creative sectors.<br />
             ✅ <strong>USPTO Registered Patent Attorneys</strong> and skilled trial lawyers.<br />
-            ✅ We've helped <strong>hundreds of clients secure & enforce IP rights globally</strong>.<br />
+            ✅ We&apos;ve helped <strong>hundreds of clients secure & enforce IP rights globally</strong>.<br />
             ✅ Successfully handled <strong>cross-border infringement cases</strong> and IP disputes.<br />
             ✅ Transparent pricing and fast turnaround on filings & actions.
           </p>
@@ -126,9 +127,9 @@ export default function IntellectualProperty() {
           Contact our top-rated IP attorneys to secure and defend what’s uniquely yours.
         </p>
         <p>
-          <a href="/#contact" className="text-blue-600 font-semibold underline">
+          <Link href="/#contact" className="text-blue-600 font-semibold underline">
             Schedule a Confidential IP Consultation →
-          </a>
+          </Link>
         </p>
       </div>
     </div>

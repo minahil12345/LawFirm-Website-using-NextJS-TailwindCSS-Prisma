@@ -13,7 +13,7 @@ export default function ClientPortal() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    let errorObj = { username: '', password: '' };
+    const errorObj = { username: '', password: '' };
     let hasError = false;
 
     if (!username) {

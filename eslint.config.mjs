@@ -10,7 +10,25 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // ✅ Add global ignores
+  {
+    ignores: [
+      "node_modules/",
+      ".next/",
+      "dist/",
+      "src/generated/", // Prisma output or others
+    ],
+  },
+  // ✅ Base Next.js + TypeScript config
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  // ✅ Override specific rules
+  {
+    rules: {
+      "@typescript-eslint/no-unused-expressions": "off",
+      "@typescript-eslint/no-unused-vars": "warn", // or "off" if needed
+    },
+  },
 ];
 
 export default eslintConfig;

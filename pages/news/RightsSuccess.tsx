@@ -71,7 +71,7 @@ const RightsSuccess = () => {
             { img: 'immigration_win.jpg', title: 'Immigrant Rights Case Ends in Favorable Ruling', date: 'April 22, 2024' },
           ].map(({ img, title, date }, i) => (
             <div key={i} className="flex gap-2 mb-2 items-start">
-              <img src={`/images/${img}`} alt={title} className="w-[90px] h-[90px] object-cover rounded-md" />
+              <Image src={`/images/${img}`} alt={title} className="w-[90px] h-[90px] object-cover rounded-md" />
               <div className="text-sm">
                 <a href="#" className="text-blue-700 font-semibold hover:underline block">{title}</a>
                 <small className="text-gray-500 text-xs">{date}</small>
@@ -97,7 +97,7 @@ const RightsSuccess = () => {
             },
           ].map(({ img, title, desc, btn }, i) => (
             <div key={i} className="bg-[#f7f7f7] border border-gray-300 rounded-xl overflow-hidden mb-3 hover:shadow-md transition-shadow duration-300">
-              <img src={`/images/${img}`} alt={title} className="w-full h-auto" />
+              <Image src={`/images/${img}`} alt={title} className="w-full h-auto" />
               <div className="p-4">
                 <h4 className="text-sm font-semibold text-black mb-1">{title}</h4>
                 <p className="text-sm text-gray-600 mb-2">{desc}</p>
